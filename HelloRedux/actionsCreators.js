@@ -1,4 +1,3 @@
-
 // Action Creator;
 // Actions Creators create action objects;
 // Actions Object will always contain a type and payload property;
