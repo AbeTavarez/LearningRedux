@@ -1,8 +1,8 @@
-// Action Creator;
+// ========== Action Creator;
 // Actions Creators create action objects;
 // Actions Object will always contain a type and payload property;
 
-const createPolicy = (name, amount) => {
+export const createPolicy = (name, amount) => {
   return { // action object
     type: "CREATE_POLICY",
     payload: {
@@ -11,17 +11,16 @@ const createPolicy = (name, amount) => {
     }
   }
 };
-const deletePolicy = (name, amount) => {
+export const deletePolicy = (name) => {
     return { // action object
         type: "DELETE_POLICY",
         payload: {
             name: name,
-            amount: amount
         }
     }
 }
 
-const createClaim = (name, amountToCollect) => {
+export const createClaim = (name, amountToCollect) => {
     return { //action object
         type: "CREATE_CLAIM",
         payload: {
@@ -30,4 +29,3 @@ const createClaim = (name, amountToCollect) => {
         }
     }
 }
-
