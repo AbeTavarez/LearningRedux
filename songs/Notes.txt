@@ -1,0 +1,8 @@
+React Redux Library, allows us to get data from the Redux store into our React Components.
+
+To pass data to a Component:
+1- Import {connect}
+2- call connect()(myComponent) at the export statement:
+    @- create mapStateToProps, MSTP will always get a parameter of state and is always going to return a object that is going to show as props inside our component. Then pass the MSTP function to connect as the first argument and pass our component as the second argument: 
+    connect(mapStateToProps)(myComponent);
+
