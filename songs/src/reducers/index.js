@@ -1,12 +1,13 @@
 import {combineReducers} from 'redux';
+//* ===== Reducers
 
 const songReducer = () => {
     return [
-        {title: 'My song 1', duration: '3:28'},
-        {title: 'My song 2', duration: '3:28'},
-        {title: 'My song 3', duration: '3:28'},
-        {title: 'My song 4', duration: '3:28'},
-    ];
+        {title: 'Numb', duration: '3:28'},
+        {title: 'In The End', duration: '2:45'},
+        {title: 'Faint', duration: '4:20'},
+        {title: 'One Step Closer', duration: '3:54'},
+    ]
 };
 
 const selectedSongReducer = (selectedSong=null, action) => {
@@ -16,6 +17,8 @@ const selectedSongReducer = (selectedSong=null, action) => {
     return selectedSong;
 };
 
+
+// The Keys on this object are going to be the Keys on our state object;
 export default combineReducers({
     songs: songReducer,
     selectedSong: selectedSongReducer
